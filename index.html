@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Who likes it?</title>
+    </head>
+    <body>
+        <h4>Who likes it?</h4>
+        <p>
+            You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item. <br>
+
+            Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples: <br> <br>
+            <code>
+                []                                -->  "no one likes this" <br>
+                ["Peter"]                         -->  "Peter likes this" <br>
+                ["Jacob", "Alex"]                 -->  "Jacob and Alex like this" <br>
+                ["Max", "John", "Mark"]           -->  "Max, John and Mark like this" <br>
+                ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this" <br> <br>
+            </code>
+            <i>
+                <small>
+                    Note: For 4 or more names, the number in "and 2 others" simply increases.
+                </small>
+            </i>
+        </p>
+        <div>
+            Enter in the names of those who liked a post, separated by commas: <br>
+            <label>Names:</label>
+            <input type="text", placeholder="ex. Brock, Jacob, Bethany, ... ,", id="entry">
+            <button onclick="textProcessor()">Submit</button>
+        </div>
+        <p id="result">...</p>
+    </body>
+    <script src="script.js"></script>
+</html> 
